@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+    <head>
+        <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- font awesome cdn -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Influencer Gear</title>
-    <style>
+  
+ <style>
         /* font family */
       
 
@@ -35,7 +36,7 @@
         .display-flex{
             display: flex;
         }
-        .praimary-btn{
+        .primary-btn{
             background-color:#E02C6D;
            font-weight: bold;
            color: #FFFFFF;
@@ -136,7 +137,7 @@ nav li *{
 
 /* banner end */
 /* main */
-main{
+main,footer{
     width: 100%;
     max-width: 1440px;
     margin: auto;
@@ -226,8 +227,61 @@ color: #5E6366;
 }
 
 /* Popular Collection end */
-/* Popular Collection start */
-/* Popular Collection end */
+/* .featured-products start */
+.featured-products{
+    display: flex;
+    gap: 96px;
+    align-items: center;
+}
+.featured-products >*{
+    width: 50%;
+}
+.featured-products .Featured-text-box .title{
+font-size: var(--fifth-font-size);
+font-weight: bold;
+margin-bottom: 16px;
+
+}
+.Featured-text-box p{
+font-size: 1rem;
+font-weight: bold;
+line-height: 28px;
+margin-bottom: 16px;
+color: rgba(108, 108, 108, 1);
+
+}
+.featured-products .primary-btn{
+border-radius: 0;
+}
+/* .featured-products */
+/* footer start */
+footer{
+    background-color: black;
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+margin-top: 60px;}
+footer h3{
+    font-size:var(--primary-font-size) ;
+    font-weight: bold;
+
+}
+footer p{
+    font-size: var(--fourth-font-size);
+    font-weight: bold;
+    line-height: 28px;
+}
+footer .icon-parent{
+        margin-top: 17px;
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+}
+.icon-parent i{
+   font-size: 30px;
+   color: white;
+}
+/* footer end */
 /* responsive */
 @media only screen and (max-width: 600px) {
 
@@ -294,6 +348,38 @@ font-size: var(--fourth-font-size);
 .popular-collection .card{
     width: 100%;
 }
+/* .featured-products */
+.featured-products{
+    flex-direction: column-reverse;
+    gap: 20px;
+    width: 90%;
+   
+}
+.featured-products>*{
+    width: 100%;
+text-align: center;
+}
+.Featured-text-box .title{
+font-size: var(--third-font-size);
+}
+.Featured-text-box p{
+font-size:1rem;
+}
+.Featured-img-box{
+   
+}
+/* footer */
+footer h3{
+    font-size: 1rem;
+    
+}
+footer p{
+    font-size: 0.75rem;
+
+}
+.icon-parent i{
+    font-size: 20px;
+}
 }
 </style>
 </head>
@@ -321,7 +407,7 @@ font-size: var(--fourth-font-size);
 Influencer</h1>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
      Sem vestibulum sed scelerisque eros. Lectus faucibus.</p>
-<button class="praimary-btn">Preebook now <i class="fa-solid fa-arrow-right"></i></button>
+<button class="primary-btn">Preebook now <i class="fa-solid fa-arrow-right"></i></button>
 </div>
 <div class="img-container">
     <img width="100%" src="images/main-camera.png" alt="">
@@ -490,7 +576,7 @@ Influencer</h1>
         <p>Buyers protection possible!</p>
     </div>
     <div class="card">
-        <img width="100%" src="images/gear.png">
+        <img width="100%" src="images/action.png">
         <h4>Green Screen</h4>
         <h5>$600.48</h5>
         <div class="review-box">
@@ -507,12 +593,36 @@ Influencer</h1>
         <p> available</p>
         <p>Buyers protection possible!</p>
     </div>
+    <p>See More</p>
+</div>
+ </section>
+ <!-- Featured products -->
+ <section class="featured-products">
+<div class="Featured-img-box">
+    <img width="100%" src="images/gear.png" alt="">
+</div>
+<div class="Featured-text-box">
+    <h3 class="title">Featured products at one place</h3>
+    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+  <button class="primary-btn">Preebook now <i class="fa-solid fa-arrow-right"></i></button>
 </div>
  </section>
     </main>
    
     <footer>
+        <div class="footer-content">
 
+            <h3>Influencer products</h3>
+<p>Copyright © 2020  influencer products</p>
+
+<p>All rights reserved</p>
+<div class="icon-parent">
+    <a href=""><i class="fa-brands fa-instagram"></i></a>
+    <a href=""><i class="fa-brands fa-facebook"></i></a>
+    <a href=""><i class="fa-brands fa-twitter"></i></a>
+    <a href=""><i class="fa-brands fa-youtube"></i></a>
+</div>    
+    </div>
     </footer>
 </body>
 </html>
